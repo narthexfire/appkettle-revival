@@ -1,0 +1,51 @@
+appkettle-revival
+Copyright (c) 2026 narthexfire contributors. Licensed under the MIT License (see LICENSE).
+
+This project builds on public work by others. Thank you.
+
+1. longmover/ha_addons (appkettle_mqtt.py) - https://github.com/longmover/ha_addons
+   Copyright (c) 2023 longmover. MIT License.
+   The frame layout, checksum and command sequence in tools/kettle_protocol.py and
+   tools/kettle.py were first written following this code. Its license notice:
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+2. Michael-Hutchinson/appkettle - https://github.com/Michael-Hutchinson/appkettle
+   Copyright (c) 2026 Michael Hutchinson. MIT License (same terms as above).
+   Used as a reference for the protocol (frames, commands, parsers). No code copied.
+
+3. tinaught/appkettleapi - https://github.com/tinaught/appkettleapi
+   The original public description of the kettle's local protocol. No license is
+   published for that repository, so no code from it is included here; it is
+   credited as a source of protocol knowledge only.
+
+4. Manrope typeface (android-app/app/src/main/res/font/manrope.ttf)
+   Copyright 2018 The Manrope Project Authors. SIL Open Font License 1.1
+   (full text in android-app/app/src/main/res/raw/manrope_ofl.txt).
+
+5. Gradle wrapper (android-app/gradle/wrapper, gradlew, gradlew.bat)
+   Copyright Gradle, Inc. Apache License 2.0.
+
+The Android app depends on AndroidX, Jetpack Compose, Kotlin and kotlinx.coroutines
+(Apache License 2.0); test-only: JUnit (EPL 1.0), Robolectric (MIT), Roborazzi
+(Apache 2.0). They are downloaded at build time and not included in this repository.
+
+The pairing scheme and the commands listed in docs/protocol.md were documented from
+static analysis of the vendor's Android app for interoperability. No vendor code,
+keys or credentials are included.

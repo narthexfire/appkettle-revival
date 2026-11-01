@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.log
+# Android / Gradle (also see android-app/.gitignore)
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.kotlin/
+captures/
+*.apk
+*.aab
+# Secrets: never commit
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+.env
+# Local publishing notes (not for publication)
+PUBLISHING-CHECKLIST.md
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

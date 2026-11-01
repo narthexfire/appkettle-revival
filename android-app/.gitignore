@@ -1,0 +1,18 @@
+.gradle/
+build/
+/app/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.kotlin/
+# Signing secrets: never commit
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.apk
+*.aab
+# Screenshot test output (curated copies live in ../docs/images)
+/docs/screenshots/

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430" font-family="Helvetica, Arial, sans-serif" font-size="14">
+  <title>Re-pairing with a phone hotspot named like the real network</title>
+  <rect width="760" height="430" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker>
+  </defs>
+  <text x="20" y="30" font-size="17" font-weight="bold" fill="#222">Step 1 to 3: pair through the phone (real router switched off)</text>
+  <rect x="20" y="50" width="190" height="80" rx="10" fill="#eef3fb" stroke="#4a6fa5"/>
+  <text x="115" y="80" text-anchor="middle" fill="#222">Computer</text>
+  <text x="115" y="102" text-anchor="middle" font-size="12" fill="#444">smartconfig_send.py</text>
+  <text x="115" y="118" text-anchor="middle" font-size="12" fill="#444">(Wi-Fi client)</text>
+  <rect x="285" y="50" width="190" height="80" rx="10" fill="#eef8f1" stroke="#3d8b5a"/>
+  <text x="380" y="78" text-anchor="middle" fill="#222">Android phone hotspot</text>
+  <text x="380" y="100" text-anchor="middle" font-size="12" fill="#444">name + password = real network</text>
+  <text x="380" y="116" text-anchor="middle" font-size="12" fill="#444">2.4 GHz, WPA2-Personal</text>
+  <rect x="550" y="50" width="190" height="80" rx="10" fill="#fbf1ec" stroke="#b3502a"/>
+  <text x="645" y="78" text-anchor="middle" fill="#222">Kettle</text>
+  <text x="645" y="100" text-anchor="middle" font-size="12" fill="#444">Wi-Fi button held ~5 s:</text>
+  <text x="645" y="116" text-anchor="middle" font-size="12" fill="#444">light flashes fast</text>
+  <line x1="210" y1="90" x2="283" y2="90" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="475" y1="90" x2="548" y2="90" stroke="#333" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+  <text x="380" y="160" text-anchor="middle" font-size="12" fill="#444">coded packets (UDP 15100) are re-broadcast over the air; the kettle stores the name and password</text>
+
+  <rect x="290" y="155" width="1" height="1" fill="none"/>
+  <text x="20" y="225" font-size="17" font-weight="bold" fill="#222">Step 4: hotspot off, real network back on</text>
+  <rect x="285" y="245" width="190" height="80" rx="10" fill="#f4f4f4" stroke="#777"/>
+  <text x="380" y="275" text-anchor="middle" fill="#222">Your router / access point</text>
+  <text x="380" y="297" text-anchor="middle" font-size="12" fill="#444">same name + password</text>
+  <rect x="550" y="245" width="190" height="80" rx="10" fill="#fbf1ec" stroke="#b3502a"/>
+  <text x="645" y="275" text-anchor="middle" fill="#222">Kettle</text>
+  <text x="645" y="297" text-anchor="middle" font-size="12" fill="#444">joins by itself</text>
+  <line x1="548" y1="285" x2="477" y2="285" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="20" y="245" width="190" height="80" rx="10" fill="#eef3fb" stroke="#4a6fa5"/>
+  <text x="115" y="275" text-anchor="middle" fill="#222">Phone app or</text>
+  <text x="115" y="297" text-anchor="middle" font-size="12" fill="#444">kettle.py find / status</text>
+  <line x1="210" y1="285" x2="283" y2="285" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <text x="380" y="360" text-anchor="middle" font-size="12" fill="#444">Control is local only: TCP port 6002 on your own network. No cloud, no account.</text>
+  <text x="380" y="395" text-anchor="middle" font-size="12" fill="#777">Does not work through enterprise / managed access points, consumer repeaters or a computer-hosted hotspot.</text>
+</svg>

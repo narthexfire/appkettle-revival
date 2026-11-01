@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Kettle" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <color name="surface">#FAF8F5</color>
+    <color name="ic_bg">#B3302A</color>
+</resources>
